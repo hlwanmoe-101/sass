@@ -1,0 +1,19 @@
+$primarycolor: red;
+@mixin qq($x) {
+  border: 2px solid blue;
+  margin: 100px $x;
+}
+.one {
+  @include qq(200px);
+  background-color: $primarycolor;
+  height: 100px;
+}
+.two {
+  h1 {
+    @include qq(20px);
+    color: $primarycolor;
+  }
+  p {
+    color: $primarycolor;
+  }
+}
